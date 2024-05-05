@@ -1,6 +1,7 @@
 package com.lucimara.hexagonal.adapters.in.controller.mapper;
 
 import com.lucimara.hexagonal.adapters.in.controller.request.CustomerRequest;
+import com.lucimara.hexagonal.adapters.in.controller.response.CustomerResponse;
 import com.lucimara.hexagonal.application.core.domain.Customer;
 import lombok.Builder;
 import org.mapstruct.Mapper;
@@ -13,4 +14,6 @@ public interface CustomerMapper {
     @Mapping(target = "address", ignore = true)
     @Mapping(target = "isValidCpf", ignore = true)
     Customer toCustomer(CustomerRequest customerRequest);
+
+    CustomerResponse toCustomerResponse(Customer customer);
 }

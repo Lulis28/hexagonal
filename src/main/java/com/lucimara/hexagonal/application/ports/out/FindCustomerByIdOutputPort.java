@@ -1,0 +1,9 @@
+package com.lucimara.hexagonal.application.ports.out;
+
+import com.lucimara.hexagonal.application.core.domain.Customer;
+
+import java.util.Optional;
+
+public interface FindCustomerByIdOutputPort {
+    Optional<Customer> findById(String id);
+}

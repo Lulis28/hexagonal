@@ -7,6 +7,9 @@ public class Customer {
     private String cpf;
     private Boolean isValidCpf;
 
+    public Customer() {
+    }
+
     public Customer(String id) {
         this.isValidCpf = false;
     }

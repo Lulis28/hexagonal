@@ -6,5 +6,5 @@ import com.lucimara.hexagonal.application.core.domain.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface CustomerRepository extends MongoRepository<CustomerRepository, String>{
+public interface CustomerRepository extends MongoRepository<CustomerEntity, String>{
 }
