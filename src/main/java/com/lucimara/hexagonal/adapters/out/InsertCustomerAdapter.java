@@ -5,7 +5,9 @@ import com.lucimara.hexagonal.adapters.out.repository.mapper.CustomerEntityMappe
 import com.lucimara.hexagonal.application.core.domain.Customer;
 import com.lucimara.hexagonal.application.ports.out.InsertCustomerOutputPort;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class InsertCustomerAdapter implements InsertCustomerOutputPort {
 
     @Autowired
